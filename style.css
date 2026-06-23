@@ -456,6 +456,27 @@ footer a:hover { color: var(--accent); }
   [style*="gap:64px"] {
     gap: 32px !important;
   }
+
+  .about-layout {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .about-copy,
+  .about-contact {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-card {
+    position: static;
+    top: auto;
+    padding: 28px;
+  }
+
+  .about-title {
+    font-size: clamp(30px, 6vw, 40px);
+  }
 }
 
 @media (max-width: 480px) {
@@ -1063,5 +1084,32 @@ body.modal-lock { overflow: hidden; }
 
   .hero-headline h1 {
     font-size: clamp(30px, 12vw, 42px);
+  }
+
+  .about-hero {
+    padding-top: 56px !important;
+  }
+
+  .about-layout {
+    gap: 20px;
+  }
+
+  .about-card {
+    padding: 22px;
+    border-radius: 12px;
+  }
+
+  .about-title {
+    font-size: clamp(26px, 8vw, 31px);
+    line-height: 1.08;
+  }
+
+  .about-card a,
+  .about-card .btn {
+    width: 100%;
+  }
+
+  .about-card a {
+    word-break: break-word;
   }
 }

@@ -1,0 +1,28 @@
+{
+  "apphosting": {
+    "backendId": "jamlumauig-dev",
+    "rootDir": "/",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "functions"
+    ]
+  },
+  "hosting": {
+    "site": "jamlumauig-dev",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
